@@ -6,3 +6,5 @@ value3=Shynu
 
 a=$(($value1+$value2))
 echo "$a"
+b=$(($value1+$value3))
+echo $b
