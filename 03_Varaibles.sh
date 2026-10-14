@@ -4,5 +4,5 @@ value1=100
 value2=300
 value3=Shynu
 
-a=$($value1+$value2)
+a=$(($value1+$value2))
 echo "$a"
