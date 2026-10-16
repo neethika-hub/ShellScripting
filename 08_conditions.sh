@@ -17,16 +17,16 @@ do
     if [ $((number % i)) -eq 0 ]
     then
         count=$((count+1))
-        if [ $count -gt 2 ]
-        then
-            echo "$number is not a Prime Number"
-        else
-            echo "$number is a Prime Number"
-        fi
     else
         count=$count
     fi
     count=0
+    if [ $count -gt 2 ]
+    then
+        echo "$number is not a Prime Number"
+    else
+        echo "$number is a Prime Number"
+    fi
     
 done
 
