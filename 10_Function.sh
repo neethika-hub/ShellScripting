@@ -11,7 +11,7 @@ PrimeNumber(){
     fi
 }
 
-for (i=1;i<10;i++)
+for ((i=1;i<10;i++))
 do
     if [ $((number%i)) -eq 0 ]
     then
