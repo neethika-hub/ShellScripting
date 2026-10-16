@@ -14,6 +14,8 @@ number=$1
 
 for (( i=1; i<10; i++ ))
 do
+    value=$((number % i))
+    echo "$value
     if [ $((number % i)) -eq 0 ]
     then
         count=$((count+1))
