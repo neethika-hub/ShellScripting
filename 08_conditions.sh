@@ -18,7 +18,7 @@ do
     if [ $((number % i)) -eq 0 ]
     then
         count= $((count+1))
-        echo "$count"
     fi
+    echo "$count"
 done
 
