@@ -20,5 +20,5 @@ do
         count=$count
     fi
     count=$count
-    PrimeNumber $number
 done
+PrimeNumber
