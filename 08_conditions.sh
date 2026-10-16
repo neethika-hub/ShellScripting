@@ -16,7 +16,7 @@ for (( i=1; i<10; i++ ))
 do
     if [ $((number % i)) -eq 0 ]
     then
-        count= $(count+1)
+        count= $((count+1))
         echo "$count"
     fi
 done
