@@ -3,7 +3,7 @@
 number=$1
 count=0
 PrimeNumber(){
-    if [ $count -ge 2 ]
+    if [ $count -gt 2 ]
     then
         echo "$number is NOT A PRIME NUMBER"
     else
