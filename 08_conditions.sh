@@ -14,17 +14,13 @@ number=$1
 
 for (( i=1; i<10; i++ ))
 do
-    echo "The value of i is:$i"
-    value=$((number % i))
-    echo "The reminder value is: $value"
     if [ $((number % i)) -eq 0 ]
     then
         count=$((count+1))
     else
         count=$count
     fi
-    count=$count
-    echo "The count is $count"  
+    count=$count  
 done
 if [ $count -gt 2 ]
 then
