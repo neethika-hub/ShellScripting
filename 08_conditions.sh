@@ -17,8 +17,8 @@ do
     echo "$i"
     if [ $((number % i)) -eq 0 ]
     then
-        count= $((count+1))
+        count=$((count+1))
     fi
-    echo "$count"
+    echo "The Count is :$count"
 done
 
