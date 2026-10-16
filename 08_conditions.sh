@@ -20,13 +20,12 @@ do
     else
         count=$count
     fi
-    count=0
-    if [ $count -gt 2 ]
-    then
-        echo "$number is not a Prime Number"
-    else
-        echo "$number is a Prime Number"
-    fi
-    
+    count=0    
 done
+if [ $count -gt 2 ]
+then
+    echo "$number is not a Prime Number"
+else
+    echo "$number is a Prime Number"
+fi
 
