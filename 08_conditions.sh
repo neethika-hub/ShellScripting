@@ -23,7 +23,7 @@ do
     else
         count=$count
     fi
-    count=0  
+    count=$count
     echo "The count is $count"  
 done
 if [ $count -gt 2 ]
