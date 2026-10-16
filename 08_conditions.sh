@@ -20,5 +20,11 @@ do
         count=$((count+1))
     fi
     echo "The Count is :$count"
+    if [ $count -gt 2 ]
+    then
+        echo "$number is not a Prime Number"
+    else
+        echo "$number is a Prime Number"
+    fi
 done
 
