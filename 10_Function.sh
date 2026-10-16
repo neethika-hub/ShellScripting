@@ -3,11 +3,11 @@
 number=$1
 count=0
 PrimeNumber(){
-    if [ $count -eq 2 ]
+    if [ $count -ge 2 ]
     then
-        echo "$number is a PRIME NUMBER"
-    else
         echo "$number is NOT A PRIME NUMBER"
+    else
+        echo "$number is PRIME NUMBER"
     fi
 }
 
