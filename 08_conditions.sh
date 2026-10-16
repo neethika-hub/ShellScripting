@@ -11,18 +11,22 @@
 #code is the number is prime/not
 
 number=$1
-count=0
+
 for (( i=1; i<10; i++ ))
 do
     if [ $((number % i)) -eq 0 ]
     then
         count=$((count+1))
-    fi
-    if [ $count -gt 2 ]
-    then
-        echo "$number is not a Prime Number"
+        if [ $count -gt 2 ]
+        then
+            echo "$number is not a Prime Number"
+        else
+            echo "$number is a Prime Number"
+        fi
     else
-        echo "$number is a Prime Number"
+        count=$count
     fi
+    count=0
+    
 done
 
