@@ -23,7 +23,7 @@ fi
 }
 
 ID_VALIDATION 
-installation_list=("mysql" "nginx" "nodejs" "mongodb")
+installation_list=("mysql" "nginx" "nodejs" "mongodb" "httpd" "rabbitmq")
 for i in ${installation_list[@]}
 do
     echo "$i"
