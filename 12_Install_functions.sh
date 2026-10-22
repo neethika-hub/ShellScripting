@@ -1,16 +1,6 @@
 #!/bin/bash
 
 id_check=$(id -u)
-ID_VALIDATION 
-
-dnf list installed mysql
-if [ $? -eq 0 ]
-then
-    echo "mysql is installed already"
-else
-    INSTALLATION
-fi
-
 ID_VALIDATION(){
 if [ $id_check -eq 0 ]
 then
@@ -31,3 +21,13 @@ else
     exit 1
 fi
 }
+ID_VALIDATION 
+
+dnf list installed mysql
+if [ $? -eq 0 ]
+then
+    echo "mysql is installed already"
+else
+    INSTALLATION
+fi
+
