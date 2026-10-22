@@ -31,7 +31,7 @@ mkdir -p $log_folder
 installation_list=("mysql" "nginx" "nodejs" "httpd")
 for i in ${installation_list[@]}
 do
-    dnf list installed $i | tee -a $file_name
+    dnf list installed $i >> $file_name
     if [ $? -eq 0 ]
     then
         echo "$i is installed already" | tee -a $file_name
