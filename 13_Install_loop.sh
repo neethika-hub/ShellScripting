@@ -13,7 +13,7 @@ fi
 }
 #Installation function to install
 INSTALLATION(){
-dnf install $ -y
+dnf install $1 -y
 if [ $1 -eq 0 ]
 then
     echo "The installation of $1 is SUCCESS"
@@ -22,7 +22,6 @@ else
     exit 1
 fi
 }
-
 
 ID_VALIDATION 
 installation_list=("mysql" "nginx" "nodejs" "mongodb")
