@@ -13,8 +13,7 @@ fi
 }
 
 INSTALLATION(){
-dnf install mysql -y
-if [ $? -eq 0 ]
+if [ $1 -eq 0 ]
 then
     echo "The installation is SUCCESS"
 else
@@ -30,5 +29,6 @@ if [ $? -eq 0 ]
 then
     echo "mysql is installed already"
 else
-    INSTALLATION
+    dnf install mysql -y
+    INSTALLATION $? 
 fi
