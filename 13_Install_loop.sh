@@ -13,12 +13,11 @@ fi
 }
 #Installation function to install
 INSTALLATION(){
-dnf install $1 -y
 if [ $1 -eq 0 ]
 then
-    echo "The installation of $1 is SUCCESS"
+    echo "The installation of $2 is SUCCESS"
 else
-    echo "The isntallation of $1 is FAILED"
+    echo "The isntallation of $2 is FAILED"
     exit 1
 fi
 }
@@ -33,6 +32,7 @@ do
     then
         echo "$i is installed already"
     else
-        INSTALLATION $i
+        dnf install $i -y
+        INSTALLATION $? $i
     fi
 done
