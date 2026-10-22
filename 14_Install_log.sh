@@ -4,6 +4,7 @@ id_check=$(id -u)
 log_folder="/var/log/install_logs"
 script_name=$(echo $0 | cut -d "_" -f1)
 file_name="$log_folder/$scriptname.log"
+echo "$file_name"
 #Validate function to check if the script is running with root or not
 ID_VALIDATION(){
 if [ $id_check -eq 0 ]
