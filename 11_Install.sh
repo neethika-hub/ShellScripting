@@ -8,6 +8,7 @@ then
     echo "You are in Root Please proceed with installation"
 else
     echo "You are Not in ROOT please switch to ROOT user"
+    exit 1
 fi
 dnf install nginx -y
 echo "$?"
