@@ -22,6 +22,7 @@ else
     exit 1
 fi
 }
+
 ID_VALIDATION 
 
 dnf list installed mysql
