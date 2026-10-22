@@ -9,3 +9,4 @@ then
 else
     echo "You are Not in ROOT please switch to ROOT user"
 fi
+dnf install nginx
