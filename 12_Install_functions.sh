@@ -1,6 +1,7 @@
 #!/bin/bash
 
 id_check=$(id -u)
+
 ID_VALIDATION(){
 if [ $id_check -eq 0 ]
 then
@@ -30,4 +31,3 @@ then
 else
     INSTALLATION
 fi
-
