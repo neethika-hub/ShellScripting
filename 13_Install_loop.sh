@@ -26,8 +26,9 @@ fi
 
 ID_VALIDATION 
 installation_list=("mysql" "nginx" "nodejs" "mongodb")
-for i in installation_list
+for i in $@
 do
+    echo $i
     dnf list installed $i
     if [ $? -eq 0 ]
     then
