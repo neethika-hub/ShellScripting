@@ -2,7 +2,7 @@
 
 id_check=$(id -u)
 log_folder="/var/log/install_logs"
-script_name=$(echo $0 | cut -d "." -f1)
+script_name=$(echo $0 | cut -d "_" -f1)
 file_name="$log_folder/$script_name.log"
 echo "$script_name"
 #Validate function to check if the script is running with root or not
@@ -36,6 +36,7 @@ do
     then
         echo "$i is installed already" | tee -a $file_name
     else
+        echo "$i is not installed..Proceeding with installation" | tee -a $file_name
         dnf install $i -y & >> $file_name
         INSTALLATION $? $i
     fi
