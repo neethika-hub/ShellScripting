@@ -9,4 +9,5 @@ echo "$GREETING"
 
 
 source ./16-script2.sh
+echo "Trying to use script 2 variable"
 echo "$GREETING"
